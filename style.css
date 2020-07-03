@@ -1,0 +1,62 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#middle {
+    width: 40%;
+    margin: auto;
+}
+.full-form {
+    margin-top: 70px;
+    background: #0000008a;
+    padding: 30px;
+    color: #fff;
+    box-shadow: 5px 5px 30px 10px black;
+}
+.full-form label {
+    display: block;
+}
+.full-form input {
+    padding-bottom: 10px;
+    background: transparent;
+    border:none;
+    color: #fff;
+    outline: 0;
+    border:0px;
+    border-bottom:2px solid #eee;
+
+}
+.wide{
+    width: 100%;
+}
+.noborder{
+    border: none !important;
+}
+
+#button {
+    background: blueviolet;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+}
+fieldset {
+    margin-top: 10px;
+}
+input::placeholder { 
+    color: white;
+    font-weight: 500;
+  }
+  .text {
+    position: relative;
+    top: 18px;
+    pointer-events: none;
+    transition: all 500ms;
+}
+
+.full-form input:focus .text{
+    font-size: 10px !important;
+    top:1px;
+    
+}
