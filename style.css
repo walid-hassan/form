@@ -56,7 +56,7 @@ input::placeholder {
 }
 
 .full-form input:focus .text{
-    font-size: 10px !important;
+    font-size: 10px;
     top:1px;
     
 }
