@@ -1,62 +1,67 @@
 body{
-    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-#middle {
-    width: 40%;
-    margin: auto;
-}
-.full-form {
-    margin-top: 70px;
-    background: #0000008a;
-    padding: 30px;
-    color: #fff;
-    box-shadow: 5px 5px 30px 10px black;
-}
-.full-form label {
-    display: block;
-}
-.full-form input {
-    padding-bottom: 10px;
-    background: transparent;
-    border:none;
-    color: #fff;
-    outline: 0;
-    border:0px;
-    border-bottom:2px solid #eee;
-
-}
-.wide{
-    width: 100%;
-}
-.noborder{
-    border: none !important;
-}
-
-#button {
-    background: blueviolet;
-    padding: 8px;
-    margin-top: 15px;
-    border: 2px solid white;
-}
-fieldset {
-    margin-top: 10px;
-}
-input::placeholder { 
-    color: white;
-    font-weight: 500;
-  }
-  .text {
+.box{
+    width: 400px;
     position: relative;
-    top: 18px;
-    pointer-events: none;
-    transition: all 500ms;
-}
+    position: relative;
+    top: 100px;
+    left: 35%;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 40px;
+    color: pink;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px 7px #000000;
 
-.full-form input:focus .text{
-    font-size: 10px;
-    top:1px;
-    
+}
+.box .inputs{
+    position: relative;
+}
+.box .inputs input{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    transition: 300ms;
+}
+.box .inputs label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 500ms ease-out ;
+    border: none;
+}
+.box .inputs input:focus ~ label, 
+.box .inputs input:valid ~ label  {
+    top: -15px;
+    font-size: 12px;
+    color:red;
+    border: none;
+}
+.box .inputs input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+}
+fieldset{
+    color: #ffffff;
+}
+.submit{
+    margin-top: 10px;
+    background: #d2369d;
+    border: 2px solid #2c2b2b78;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 700;
 }

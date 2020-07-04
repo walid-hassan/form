@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
-    <title>Form</title>
 </head>
 <body>
-    <section id="middle">
-        <form class="full-form" action="">
-            <label ><span class="text">Your Name</span><input type="text" placeholder="" class="wide" ></label><br>
-            <label for=""><span class="text">Your Email</span> <input type="email" name="" id="" placeholder="" class="wide" ></label><br>
-            <label for=""> <span class="text">Your Password</span> <input type="password" name="" id="" placeholder=" "class="wide" ></label><br>
-            <label for="brith"><input type="date" name="" id="birth" placeholder="Your Brithday"class="wide" ></label><br>
-            <label for="pic">Your Picture : <input type="file" name="" id="pic" class="noborder"></label>
+    <div class="box">
+        <form action="">
+            <div class="inputs">
+                <input type="text" required >
+                <label>Your Name</label>
+            </div>
+            <div class="inputs">
+                <input type="email" name="" id="" required >
+                <label for="">Your Email</label>
+            </div>
+            <div class="inputs">
+                <input type="password" name="" id="" required >
+                <label for="">Your Password</label>
+            </div>
             <fieldset>
-                <legend>Choose Your Gander</legend>
-                <label for="male"><input type="radio" name="gander" id="male"> Male</label>
-                <label for="female"><input type="radio" name="gander" id="female"> Female</label>
+                <legend>Your Gender</legend>
+                <input type="radio" name="gender" id=""> Male
+                <input type="radio" name="gender" id=""> Female
             </fieldset>
             <fieldset>
-                <legend>Choose Your Hobbies</legend>
-                <label for="Cricket"><input type="checkbox" name="gander" id="male"> Cricket</label>
-                <label for="football"><input type="checkbox" name="gander" id="football"> Football</label>
-                <label for="tennis"><input type="checkbox" name="tennis" id="male"> Tennis</label>
-            </fieldset>
-            <input type="button" id="button" value="Submit Now">
+            <legend>Your Hobbies</legend>
+                <input type="checkbox" name="" id=""> Cricket
+                <input type="checkbox" name="" id=""> Football
+                <input type="checkbox" name="" id=""> Tennis
+             </fieldset>
+            <input type="button" value="Submit Now" class="submit">
         </form>
-    </section>
+    </div>
+    
 </body>
 </html>
